@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Status') {
       steps {
-        sh 'liquibase status --url="jdbc:postgresql://13.58.79.61:5432/liquibase" --changeLogFile=my_app-wrapper.xml --username="postgres" --password="postgres"'
+        sh 'liquibase status --url="jdbc:postgresql://3.133.79.248:5432/liquibase" --changeLogFile=my_app-wrapper.xml --username="postgres" --password="postgres"'
       }
     }
     stage('Update') {
